@@ -32,6 +32,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BqY-pz-krz">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What to search for" textAlignment="natural" minimumFontSize="17" id="lfl-8f-Xtb">
+                            <rect key="frame" x="122" y="5" width="148" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
                         <centerItemGroups>
                             <barButtonItemGroup customizationDisposition="fixed" id="lzo-L5-g1l">
                                 <barButtonItems>
@@ -43,9 +50,16 @@
                                 </barButtonItems>
                             </barButtonItemGroup>
                         </centerItemGroups>
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="MTg-ps-AUD">
+                            <connections>
+                                <action selector="searchAction:" destination="BYZ-38-t0r" id="NQo-Pe-hwR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapOutlet" destination="uhd-fK-02V" id="Lk0-oE-OHY"/>
+                        <outlet property="searchOutlet" destination="MTg-ps-AUD" id="QUr-v0-nOD"/>
+                        <outlet property="textOutlet" destination="lfl-8f-Xtb" id="g7P-Fq-PLb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
